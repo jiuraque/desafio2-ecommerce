@@ -27,6 +27,7 @@ header {
   display: grid;
   align-items: center;
   line-height: 3rem;
+  width: 100%;
 }
 
 nav {
@@ -68,9 +69,23 @@ main {
   align-items: center;
 }
 
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .grid-item img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
+}
+
+.btn {
+  background-color: aquamarine;
+  color: black;
+  width: 100%;
+  text-align: center;
 }
 
 footer {
@@ -78,4 +93,5 @@ footer {
   background-color: aquamarine;
   text-align: center;
   line-height: 3rem;
+  width: 100%;
 }
