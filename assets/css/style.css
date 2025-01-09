@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+    background-color:rgb(255, 255, 255);
+    font-family: "Nunito", serif;
+}
+
+.site-layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+  gap: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: aquamarine;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  line-height: 3rem;
+}
+
+nav {
+  grid-area: nav;
+  margin-left: 0 1.5em;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+nav h2 {
+    text-align: center;
+    padding: 0.3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0.5rem;
+}
+
+nav ul li {
+    align-items: center;
+    margin: 0;
+}
+
+
+main {
+  grid-area: main;
+  align-items: center;
+  min-width: calc(100vw - 200px)
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item img {
+    width: 500px;
+    height: 500px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: aquamarine;
+  text-align: center;
+  line-height: 3rem;
+}
